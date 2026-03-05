@@ -460,6 +460,25 @@ a:hover {
   opacity: 0.6;
 }
 
+/* ===== Abstract toggle ===== */
+.abstract-toggle {
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 0.4em;
+}
+
+.abstract-text {
+  margin-top: 0.5rem;
+  padding: 0.8rem 1rem;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  background: rgba(128,128,128,0.06);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 2px;
+}
+
 /* ===== Footer ===== */
 .site-footer {
   display: flex;
