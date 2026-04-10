@@ -3,4 +3,5 @@
 .idea/
 *.docx
 logs*.md
+logs/
 Siti*
