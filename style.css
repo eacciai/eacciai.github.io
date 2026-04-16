@@ -25,12 +25,12 @@ body::before {
   inset: 0;
   z-index: -1;
   background: url('images/wallpaper-alighiero-boetti16.jpg') center center / cover no-repeat;
-  opacity: 0.06;
+  opacity: 0.04;
   pointer-events: none;
 }
 
 [data-bs-theme="dark"] body::before {
-  opacity: 0.03;
+  opacity: 0.02;
 }
 
 /* Links use accent */
