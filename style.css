@@ -43,15 +43,21 @@ a:hover {
 
 /* ===== Navbar tweaks ===== */
 .navbar {
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: transparent;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
+}
+
+[data-bs-theme="dark"] .navbar {
+  border-bottom-color: rgba(255,255,255,0.12);
 }
 
 .navbar .navbar-brand {
   font-weight: 600;
   font-size: 1.12rem;
   letter-spacing: 0.01em;
+  color: inherit;
 }
 
 .navbar .nav-link {
@@ -59,10 +65,42 @@ a:hover {
   font-weight: 500;
   padding-left: 0.9rem !important;
   padding-right: 0.9rem !important;
+  color: rgba(0,0,0,0.65);
+}
+
+.navbar .nav-link:hover {
+  color: rgba(0,0,0,0.9);
 }
 
 .navbar .nav-link.active {
   font-weight: 600;
+  color: rgba(0,0,0,0.9);
+}
+
+[data-bs-theme="dark"] .navbar .nav-link {
+  color: rgba(255,255,255,0.65);
+}
+
+[data-bs-theme="dark"] .navbar .nav-link:hover,
+[data-bs-theme="dark"] .navbar .nav-link.active {
+  color: rgba(255,255,255,0.9);
+}
+
+/* Navbar toggler icon color */
+.navbar-toggler {
+  border-color: rgba(0,0,0,0.2);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+[data-bs-theme="dark"] .navbar-toggler {
+  border-color: rgba(255,255,255,0.2);
+}
+
+[data-bs-theme="dark"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 /* Navbar tools (search + dark toggle) */
@@ -73,7 +111,7 @@ a:hover {
 }
 
 .navbar-tools .nav-tool {
-  color: rgba(255,255,255,0.7);
+  color: rgba(0,0,0,0.55);
   background: none;
   border: none;
   padding: 0.3rem 0.5rem;
@@ -85,7 +123,15 @@ a:hover {
 }
 
 .navbar-tools .nav-tool:hover {
-  color: #fff;
+  color: rgba(0,0,0,0.9);
+}
+
+[data-bs-theme="dark"] .navbar-tools .nav-tool {
+  color: rgba(255,255,255,0.55);
+}
+
+[data-bs-theme="dark"] .navbar-tools .nav-tool:hover {
+  color: rgba(255,255,255,0.9);
 }
 
 .navbar-tools .nav-tool-text {
@@ -274,7 +320,7 @@ a:hover {
 
   /* Style for Research link outside collapse on mobile */
   .nav-research-mobile {
-    color: rgba(255,255,255,0.7) !important;
+    color: rgba(0,0,0,0.65) !important;
     font-size: 0.95rem;
     font-weight: 500;
     padding: 0.3rem 0.5rem;
@@ -284,7 +330,16 @@ a:hover {
 
   .nav-research-mobile:hover,
   .nav-research-mobile.active {
-    color: #fff !important;
+    color: rgba(0,0,0,0.9) !important;
+  }
+
+  [data-bs-theme="dark"] .nav-research-mobile {
+    color: rgba(255,255,255,0.65) !important;
+  }
+
+  [data-bs-theme="dark"] .nav-research-mobile:hover,
+  [data-bs-theme="dark"] .nav-research-mobile.active {
+    color: rgba(255,255,255,0.9) !important;
   }
 
   /* Show "In the Media" inside the mobile menu */
