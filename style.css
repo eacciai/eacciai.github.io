@@ -505,6 +505,15 @@ a:hover {
   border-radius: 2px;
 }
 
+/* ===== Journal name ===== */
+.journal-name {
+  color: #2a8a66;
+}
+
+[data-bs-theme="dark"] .journal-name {
+  color: #fff;
+}
+
 /* ===== Footer ===== */
 .site-footer {
   display: flex;
