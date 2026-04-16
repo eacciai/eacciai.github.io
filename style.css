@@ -18,57 +18,19 @@ body {
   position: relative;
 }
 
-/* Boetti Mappa watermark background */
+/* Boetti Mappa watermark background (same on all pages) */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   z-index: -1;
   background: url('images/wallpaper-alighiero-boetti16.jpg') center center / cover no-repeat;
-  opacity: 0.08;
+  opacity: 0.06;
   pointer-events: none;
 }
 
 [data-bs-theme="dark"] body::before {
-  opacity: 0.04;
-}
-
-/* Research page: Firenze background instead of Boetti */
-body.research-page::before {
-  background-image: url('images/firenze-wallpaper.jpeg');
-}
-
-[data-bs-theme="dark"] body.research-page::before {
-  background-image: url('images/firenze-wallpaper.jpeg');
-}
-
-/* CV page: Sironi background instead of Boetti */
-body.cv-page::before {
-  background-image: url('images/sironi-wallpaper.jpg');
-}
-
-[data-bs-theme="dark"] body.cv-page::before {
-  background-image: url('images/sironi-wallpaper.jpg');
-}
-
-/* Contacts page: Berti background instead of Boetti */
-body.contacts-page::before {
-  background-image: url('images/berti-wallpaper.jpg');
-}
-
-[data-bs-theme="dark"] body.contacts-page::before {
-  background-image: url('images/berti-wallpaper.jpg');
-}
-
-/* Media page: Burri background instead of Boetti */
-body.media-page::before {
-  background-image: url('images/burri-wallpaper.jpg');
-  opacity: 0.18;
-}
-
-[data-bs-theme="dark"] body.media-page::before {
-  background-image: url('images/burri-wallpaper.jpg');
-  opacity: 0.10;
+  opacity: 0.03;
 }
 
 /* Links use accent */
