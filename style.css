@@ -43,7 +43,7 @@ a:hover {
 
 /* ===== Navbar tweaks ===== */
 .navbar {
-  background: transparent;
+  background-color: var(--bs-body-bg, #fff) !important;
   border-bottom: 1px solid rgba(0,0,0,0.12);
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
@@ -350,6 +350,14 @@ a:hover {
   /* Hide "In the Media" from navbar tools on mobile */
   .navbar-tools .nav-tool-text {
     display: none;
+  }
+
+  /* Keep search + theme toggle visible on mobile */
+  .navbar-tools {
+    display: flex !important;
+    align-items: center;
+    gap: 0.3rem;
+    order: 3;
   }
 }
 
