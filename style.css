@@ -35,7 +35,7 @@ body {
 @media (min-width: 768px) {
   body {
     background-image:
-      linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+      linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)),
       url('images/wallpaper-alighiero-boetti16.jpg');
   }
   [data-bs-theme="dark"] body {
