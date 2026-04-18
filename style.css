@@ -31,6 +31,20 @@ body {
     url('images/wallpaper-alighiero-boetti16.jpg');
 }
 
+/* Desktop: more transparent (mobile stays at 0.85, perfect there) */
+@media (min-width: 768px) {
+  body {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+      url('images/wallpaper-alighiero-boetti16.jpg');
+  }
+  [data-bs-theme="dark"] body {
+    background-image:
+      linear-gradient(rgba(33,37,41,0.97), rgba(33,37,41,0.97)),
+      url('images/wallpaper-alighiero-boetti16.jpg');
+  }
+}
+
 /* Links use accent */
 a {
   color: var(--link-color);
