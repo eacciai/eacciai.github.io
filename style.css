@@ -31,11 +31,18 @@ body {
     url('images/wallpaper-alighiero-boetti16.jpg');
 }
 
-/* Desktop: zoom the background to match mobile's natural framing
-   (mobile's narrow viewport + cover already crops to the colorful continents) */
+/* Desktop: overlay lighter so the blue-ocean portions (more visible on wide
+   viewports) don't wash out — matches mobile's perceived visibility */
 @media (min-width: 768px) {
   body {
-    background-size: auto 300%;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.70), rgba(255,255,255,0.70)),
+      url('images/wallpaper-alighiero-boetti16.jpg');
+  }
+  [data-bs-theme="dark"] body {
+    background-image:
+      linear-gradient(rgba(33,37,41,0.88), rgba(33,37,41,0.88)),
+      url('images/wallpaper-alighiero-boetti16.jpg');
   }
 }
 
