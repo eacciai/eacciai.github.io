@@ -33,14 +33,26 @@ body::before {
   opacity: 0.02;
 }
 
-/* Desktop: slightly more visible (wider viewport shows more pale-blue ocean
-   which fades out — mobile already zooms onto the colorful continents) */
+/* Desktop: the ::before with z-index:-1 gets hidden by Bootstrap's opaque
+   body background on wide viewports. Switch to body background-image with
+   a white overlay so the watermark can't be covered. Mobile keeps ::before. */
 @media (min-width: 768px) {
   body::before {
-    opacity: 0.09;
+    display: none;
   }
-  [data-bs-theme="dark"] body::before {
-    opacity: 0.05;
+  body {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+      url('images/wallpaper-alighiero-boetti16.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  [data-bs-theme="dark"] body {
+    background-image:
+      linear-gradient(rgba(33,37,41,0.96), rgba(33,37,41,0.96)),
+      url('images/wallpaper-alighiero-boetti16.jpg');
   }
 }
 
