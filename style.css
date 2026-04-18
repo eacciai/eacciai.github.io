@@ -33,6 +33,17 @@ body::before {
   opacity: 0.02;
 }
 
+/* Desktop: slightly more visible (wider viewport shows more pale-blue ocean
+   which fades out — mobile already zooms onto the colorful continents) */
+@media (min-width: 768px) {
+  body::before {
+    opacity: 0.09;
+  }
+  [data-bs-theme="dark"] body::before {
+    opacity: 0.05;
+  }
+}
+
 /* Links use accent */
 a {
   color: var(--link-color);
