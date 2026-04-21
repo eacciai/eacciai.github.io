@@ -537,6 +537,16 @@ a:hover {
   color: #fff;
 }
 
+/* ===== Upcoming talks title ===== */
+.upcoming-title {
+  color: #c0392b;
+  font-weight: 700;
+}
+
+[data-bs-theme="dark"] .upcoming-title {
+  color: #ff7a70;
+}
+
 /* ===== Footer ===== */
 .site-footer {
   display: flex;
