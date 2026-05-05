@@ -81,3 +81,25 @@
     });
   });
 })();
+
+// ===== Coverage line: align right edge with [Paper] link =====
+(function () {
+  function syncCoverageWidth() {
+    document.querySelectorAll('li').forEach(function (li) {
+      var paperLink = li.querySelector('.paper-link');
+      var coverage = li.querySelector('.coverage');
+      if (!paperLink || !coverage) return;
+      var paperRect = paperLink.getBoundingClientRect();
+      var coverageRect = coverage.getBoundingClientRect();
+      var width = paperRect.right - coverageRect.left;
+      if (width > 0) coverage.style.width = width + 'px';
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', syncCoverageWidth);
+  } else {
+    syncCoverageWidth();
+  }
+  window.addEventListener('load', syncCoverageWidth);
+  window.addEventListener('resize', syncCoverageWidth);
+})();
