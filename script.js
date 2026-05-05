@@ -82,13 +82,18 @@
   });
 })();
 
-// ===== Coverage line: align right edge with [Paper] link =====
+// ===== Coverage line: align right edge with [Paper] link (desktop only) =====
 (function () {
   function syncCoverageWidth() {
+    var isDesktop = window.matchMedia('(min-width: 768px)').matches;
     document.querySelectorAll('li').forEach(function (li) {
       var paperLink = li.querySelector('.paper-link');
       var coverage = li.querySelector('.coverage');
-      if (!paperLink || !coverage) return;
+      if (!coverage) return;
+      if (!isDesktop || !paperLink) {
+        coverage.style.width = '';
+        return;
+      }
       var paperRect = paperLink.getBoundingClientRect();
       var coverageRect = coverage.getBoundingClientRect();
       var width = paperRect.right - coverageRect.left;
