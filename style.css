@@ -523,6 +523,8 @@ a:hover {
   padding: 0.8rem 1rem;
   font-size: 0.92rem;
   line-height: 1.7;
+  text-align: justify;
+  hyphens: auto;
   background: rgba(128,128,128,0.06);
   border-left: 3px solid var(--accent-color);
   border-radius: 2px;
