@@ -561,96 +561,33 @@ a:hover {
 
 /* ===== Upcoming talks title ===== */
 .upcoming-title {
-  color: #c0392b;
+  color: #ec0000;
   font-weight: 700;
 }
 
 [data-bs-theme="dark"] .upcoming-title {
-  color: #ff7a70;
+  color: #ff3333;
 }
 
 /* ===== News badge ===== */
 .news-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45em;
-  padding: 0.22em 0.9em;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  display: inline-block;
+  padding: 0.2em 0.7em;
+  border-radius: 2px;
+  background-color: #ec0000;
   color: #fff;
   font-weight: 700;
-  font-size: 0.78em;
-  letter-spacing: 0.09em;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  line-height: 1.6;
+  line-height: 1.5;
   vertical-align: middle;
-  margin-bottom: 0.35em;
-  animation: news-glow 2.4s ease-in-out infinite;
-}
-
-.news-dot {
-  width: 0.45em;
-  height: 0.45em;
-  border-radius: 50%;
-  background: #fff;
-  animation: news-dot-pulse 2.4s ease-in-out infinite;
-}
-
-@keyframes news-glow {
-  0%, 100% {
-    box-shadow: 0 0 5px rgba(231, 76, 60, 0.30);
-    filter: brightness(0.9);
-  }
-  50% {
-    box-shadow: 0 0 15px 3px rgba(231, 76, 60, 0.65);
-    filter: brightness(1.3);
-  }
-}
-
-@keyframes news-dot-pulse {
-  0%, 100% { opacity: 0.5; }
-  50%      { opacity: 1; }
-}
-
-.news-badge:hover {
-  animation-duration: 1.4s;
-}
-
-.news-badge:hover .news-dot {
-  animation-duration: 1.4s;
+  margin-bottom: 0.3em;
 }
 
 [data-bs-theme="dark"] .news-badge {
-  background: linear-gradient(135deg, #ff8b80, #e05a4e);
-  color: #1c1c1c;
-  animation-name: news-glow-dark;
-}
-
-[data-bs-theme="dark"] .news-dot {
-  background: #1c1c1c;
-}
-
-@keyframes news-glow-dark {
-  0%, 100% {
-    box-shadow: 0 0 5px rgba(255, 122, 112, 0.35);
-    filter: brightness(0.9);
-  }
-  50% {
-    box-shadow: 0 0 17px 4px rgba(255, 122, 112, 0.70);
-    filter: brightness(1.2);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .news-badge,
-  [data-bs-theme="dark"] .news-badge,
-  .news-dot {
-    animation: none;
-  }
-  .news-badge {
-    box-shadow: 0 0 11px 2px rgba(231, 76, 60, 0.45);
-    filter: none;
-  }
+  background-color: #ff3333;
+  color: #fff;
 }
 
 /* ===== Footer ===== */
