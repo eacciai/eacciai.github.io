@@ -569,25 +569,16 @@ a:hover {
   color: #ff3333;
 }
 
-/* ===== News badge ===== */
-.news-badge {
-  display: inline-block;
-  padding: 0.2em 0.7em;
-  border-radius: 2px;
-  background-color: #ec0000;
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.8em;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  line-height: 1.5;
-  vertical-align: middle;
-  margin-bottom: 0.3em;
+/* ===== Light divider in the about text ===== */
+.about-divider {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 1.5rem 0;
+  opacity: 1;
 }
 
-[data-bs-theme="dark"] .news-badge {
-  background-color: #ff3333;
-  color: #fff;
+[data-bs-theme="dark"] .about-divider {
+  border-top-color: rgba(255, 255, 255, 0.15);
 }
 
 /* ===== Footer ===== */
