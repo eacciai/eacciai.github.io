@@ -191,9 +191,9 @@ a:hover {
 }
 
 .about-solana .about-subtitle {
-  font-size: 1.05rem;
-  line-height: 1.65;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.9rem;
   opacity: 0.78;
 }
 
@@ -231,28 +231,31 @@ a:hover {
   padding-right: 1.5em;
   flex-basis: 0;
   flex-grow: 1;
+  font-size: 0.92rem;
+  line-height: 1.55;
 }
 
 .about-contents p {
-  line-height: 1.75;
-  margin-bottom: 1rem;
+  line-height: 1.55;
+  margin-bottom: 0.55rem;
 }
 
 .about-contents h2 {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  margin-top: 1.5rem;
-  margin-bottom: 0.7rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
   border-bottom: none;
 }
 
 .about-contents ul {
-  padding-left: 1.2rem;
+  padding-left: 1.1rem;
+  margin-bottom: 0.55rem;
 }
 
 .about-contents ul li {
-  margin-bottom: 0.6rem;
-  line-height: 1.6;
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
 }
 
 /* Profile image */
@@ -335,6 +338,11 @@ a:hover {
   .about-contents {
     padding-right: 0;
     width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .page-content {
+    font-size: 0.95rem;
   }
 
   /* Hide Research from mobile dropdown (it's shown outside) */
@@ -390,28 +398,35 @@ a:hover {
   max-width: 900px;
   margin: 0 auto;
   padding: 2.5rem 1.5rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.page-content p {
+  margin-bottom: 0.55rem;
 }
 
 .page-content h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem;
 }
 
 .page-content h2 {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 0.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .page-content ul {
-  padding-left: 1.2rem;
+  padding-left: 1.1rem;
+  margin-bottom: 0.55rem;
 }
 
 .page-content ul li {
-  margin-bottom: 0.8rem;
-  line-height: 1.65;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
 }
 
 /* CV embedded PDF */
@@ -521,8 +536,8 @@ a:hover {
 .abstract-text {
   margin-top: 0.5rem;
   padding: 0.8rem 1rem;
-  font-size: 0.92rem;
-  line-height: 1.7;
+  font-size: 0.88rem;
+  line-height: 1.55;
   text-align: justify;
   hyphens: auto;
   background: rgba(128,128,128,0.06);
@@ -544,8 +559,8 @@ a:hover {
   margin-top: 0.6rem;
   padding-top: 0.5rem;
   border-top: 2px solid var(--accent-color);
-  font-size: 0.92rem;
-  line-height: 1.6;
+  font-size: 0.88rem;
+  line-height: 1.5;
 }
 
 .coverage-label {
@@ -573,7 +588,7 @@ a:hover {
 .about-divider {
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
-  margin: 1.5rem 0;
+  margin: 1.2rem 0 0.9rem;
   opacity: 1;
 }
 
