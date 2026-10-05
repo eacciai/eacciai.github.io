@@ -143,6 +143,10 @@ a:hover {
   color: rgba(0,0,0,0.65);
 }
 
+.nav-short {
+  display: none;
+}
+
 .navbar .nav-link:hover {
   color: rgba(0,0,0,0.9);
 }
@@ -324,12 +328,17 @@ a:hover {
   display: none;
 }
 
-.about-header {
+.about-header,
+.about-top {
   display: contents;
 }
 
 /* ===== Responsive (mobile) ===== */
 @media (max-width: 991.98px) {
+  .about-solana {
+    padding-top: 1.6em;
+  }
+
   .about-entity {
     flex-direction: column;
     align-items: flex-start;
@@ -338,6 +347,14 @@ a:hover {
 
   .entity-contents {
     width: 100%;
+  }
+
+  /* Photo on the left, links beside it */
+  .about-top {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-bottom: 1.3em;
   }
 
   .about-photo-desktop {
@@ -350,18 +367,18 @@ a:hover {
   }
 
   .about-photo-mobile .about-image {
-    width: 7em;
-    height: 7em;
+    width: 6.5em;
+    height: 6.5em;
   }
 
+  /* The affiliation is already in the masthead right above */
   .about-photo-mobile .about-photo-caption {
-    text-align: left;
-    margin-top: 0.6rem;
+    display: none;
   }
 
   .about-header {
     display: block;
-    margin-bottom: 1.2em;
+    flex-shrink: 0;
   }
 
   .about-links {
@@ -369,8 +386,7 @@ a:hover {
     flex-wrap: wrap;
     row-gap: 0.5em;
     column-gap: 0.5em;
-    width: 100%;
-    padding-bottom: 1.2em;
+    padding-bottom: 0;
   }
 
   .about-link {
@@ -389,13 +405,19 @@ a:hover {
     font-size: 0.95rem;
   }
 
-  /* Masthead: smaller type, affiliation on two lines */
+  /* Masthead: affiliation on two lines, page links as a full-width bar */
+  .navbar {
+    padding-top: 1.2rem;
+    padding-bottom: 0;
+  }
+
   .navbar .brand-name {
-    font-size: 1.7rem;
+    font-size: 2.1rem;
   }
 
   .navbar .brand-affiliation {
-    font-size: 0.92rem;
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
   }
 
   .navbar .brand-affiliation span {
@@ -407,19 +429,46 @@ a:hover {
   }
 
   .masthead-nav {
-    margin: 0.8rem 0 0 -0.6rem;
+    width: 100%;
+    margin: 1rem 0 0;
+    column-gap: 1.6rem;
+    border-top: 1px solid rgba(0,0,0,0.12);
+  }
+
+  [data-bs-theme="dark"] .masthead-nav {
+    border-top-color: rgba(255,255,255,0.12);
   }
 
   .navbar .nav-link {
     font-size: 0.76rem;
     letter-spacing: 0.05em;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
+    padding: 0.65rem 0 0.55rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  .navbar .nav-link.active {
+    border-bottom-color: var(--accent-color);
   }
 
   .navbar-tools {
     right: 0.75rem;
     gap: 0.3rem;
+  }
+}
+
+/* Phones: links spread edge to edge, "Curriculum Vitae" shortened to "CV" */
+@media (max-width: 575.98px) {
+  .masthead-nav {
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  .nav-full {
+    display: none;
+  }
+
+  .nav-short {
+    display: inline;
   }
 }
 
@@ -461,6 +510,17 @@ a:hover {
 .page-content ul li {
   margin-bottom: 0.4rem;
   line-height: 1.5;
+}
+
+@media (max-width: 991.98px) {
+  /* Same breathing room under the masthead as on the homepage */
+  .page-content {
+    padding-top: 1.5rem;
+  }
+
+  .page-content > h2:first-child {
+    margin-top: 0;
+  }
 }
 
 /* CV embedded PDF */
