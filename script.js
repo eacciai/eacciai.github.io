@@ -27,7 +27,7 @@
 // ===== Search Overlay =====
 (function () {
   var pages = [
-    { title: 'Home', section: 'Homepage', url: 'index.html', keywords: 'home about bio education' },
+    { title: 'About', section: 'Homepage', url: 'index.html', keywords: 'home about bio education' },
     { title: 'Research', section: 'Research page', url: 'research.html', keywords: 'research papers working progress interests' },
     { title: 'Curriculum Vitae', section: 'CV page', url: 'cv.html', keywords: 'cv curriculum vitae experience skills education work' }
   ];

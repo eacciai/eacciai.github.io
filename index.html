@@ -76,43 +76,27 @@
   <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
   <link rel="icon" type="image/png" sizes="28x28" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon-192.png">
-  <link rel="stylesheet" href="style.css?v=20261005">
+  <link rel="stylesheet" href="style.css?v=20261005b">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container-fluid px-4">
-      <a class="navbar-brand" href="index.html">Elia Acciai</a>
-      <a class="nav-link nav-research-mobile d-lg-none" href="research.html">Research</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item nav-item-research">
-            <a class="nav-link" href="research.html">Research</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cv.html">Curriculum Vitae</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacts.html">Contacts</a>
-          </li>
-          <li class="nav-item nav-item-media-mobile d-none">
-            <a class="nav-link" href="media.html">In the Media</a>
-          </li>
-        </ul>
+  <nav class="navbar masthead">
+    <div class="container-fluid">
+      <div class="navbar-brand">
+        <a class="brand-name" href="index.html">Elia Acciai</a>
+        <span class="brand-affiliation"><span>PhD Candidate in Economics</span> <span>University of Turin &amp; Collegio Carlo Alberto</span></span>
       </div>
 
+      <ul class="masthead-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">Curriculum Vitae</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+          <li class="nav-item"><a class="nav-link" href="media.html">In the Media</a></li>
+      </ul>
+
       <div class="navbar-tools">
-        <a href="media.html" class="nav-tool nav-tool-text">In the Media</a>
         <button id="search-btn" class="nav-tool" aria-label="Search" title="Search (f, /, s)">
           <i class="bi bi-search"></i>
         </button>
@@ -141,14 +125,10 @@
 
           <!-- Header: name + photo side by side on mobile -->
           <div class="about-header">
-            <div class="about-header-text">
-              <h1 class="about-title">Elia Acciai</h1>
-              <p class="about-subtitle">
-                PhD Candidate in Economics<br>
-                University of Turin &amp; Collegio Carlo Alberto
-              </p>
+            <div class="about-photo about-photo-mobile">
+              <img src="images/Picture_EliaAcciai_white_bg.jpg" alt="Elia Acciai" class="about-image round">
+              <p class="about-photo-caption">PhD Candidate in Economics<br>University of Turin &amp; Collegio Carlo Alberto</p>
             </div>
-            <img src="images/Picture_EliaAcciai_white_bg.jpg" alt="Elia Acciai" class="about-image about-image-mobile round">
           </div>
 
           <!-- Social Links -->
@@ -201,7 +181,10 @@
         </div>
 
         <!-- Right: profile image (desktop only) -->
-        <img src="images/Picture_EliaAcciai_white_bg.jpg" alt="Elia Acciai" class="about-image about-image-desktop round">
+        <div class="about-photo about-photo-desktop">
+          <img src="images/Picture_EliaAcciai_white_bg.jpg" alt="Elia Acciai" class="about-image round">
+          <p class="about-photo-caption">PhD Candidate in Economics<br>University of Turin &amp; Collegio Carlo Alberto</p>
+        </div>
 
       </div>
     </div>
