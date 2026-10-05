@@ -238,6 +238,13 @@ a:hover {
 .about-contents p {
   line-height: 1.55;
   margin-bottom: 0.55rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.about-contents p.about-interests {
+  text-align: left;
+  hyphens: manual;
 }
 
 .about-contents h2 {
