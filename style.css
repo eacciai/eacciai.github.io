@@ -296,8 +296,8 @@ a:hover {
 
 /* Profile image */
 .about-image {
-  width: 15em;
-  height: 15em;
+  width: 13.5em;
+  height: 13.5em;
   object-fit: cover;
   flex-shrink: 0;
 }
