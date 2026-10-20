@@ -143,10 +143,6 @@ a:hover {
   color: rgba(0,0,0,0.65);
 }
 
-.nav-short {
-  display: none;
-}
-
 .navbar .nav-link:hover {
   color: rgba(0,0,0,0.9);
 }
@@ -456,19 +452,11 @@ a:hover {
   }
 }
 
-/* Phones: links spread edge to edge, "Curriculum Vitae" shortened to "CV" */
+/* Phones: links spread edge to edge */
 @media (max-width: 575.98px) {
   .masthead-nav {
     justify-content: space-between;
     column-gap: 0;
-  }
-
-  .nav-full {
-    display: none;
-  }
-
-  .nav-short {
-    display: inline;
   }
 }
 
