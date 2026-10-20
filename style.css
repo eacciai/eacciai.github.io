@@ -16,6 +16,9 @@
 body {
   font-family: 'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Boetti Mappa watermark background (same on all pages) */
@@ -689,7 +692,7 @@ a:hover {
   opacity: 0.6;
 }
 
-/* ===== Min height ===== */
+/* ===== Min height: content fills the space between masthead and footer ===== */
 .quarto-container {
-  min-height: calc(100vh - 132px);
+  flex: 1 0 auto;
 }
