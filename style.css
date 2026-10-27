@@ -209,7 +209,7 @@ a:hover {
 .about-solana {
   display: flex;
   flex-direction: column;
-  padding-top: 3em;
+  padding-top: 2.5em;
   padding-bottom: 1em;
 }
 
@@ -279,7 +279,7 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  margin-top: 1.2rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
   border-bottom: none;
 }
