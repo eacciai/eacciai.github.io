@@ -209,7 +209,7 @@ a:hover {
 .about-solana {
   display: flex;
   flex-direction: column;
-  padding-top: 3em;
+  padding-top: 2em;
   padding-bottom: 1em;
 }
 
@@ -695,4 +695,21 @@ a:hover {
 /* ===== Min height: content fills the space between masthead and footer ===== */
 .quarto-container {
   flex: 1 0 auto;
+}
+
+/* Desktop only: larger base text size (scales all rem values);
+   photo and link buttons are offset to keep their original size */
+@media (min-width: 992px) {
+  html {
+    font-size: 112.5%;
+  }
+
+  .about-image {
+    width: calc(13.5em / 1.125);
+    height: calc(13.5em / 1.125);
+  }
+
+  .about-links {
+    font-size: calc(1em / 1.125);
+  }
 }
