@@ -468,6 +468,7 @@ a:hover {
   max-width: 960px;
   margin: 0 auto;
   padding: 2.5rem 12px;
+  padding-top: 2rem; /* same top space as the About page */
   font-size: 0.92rem;
   line-height: 1.55;
 }
@@ -508,10 +509,11 @@ a:hover {
   .page-content {
     padding-top: 1.6rem;
   }
+}
 
-  .page-content > section:first-child > h2:first-child {
-    margin-top: 0;
-  }
+/* Content starts at the same height on every page */
+.page-content > section:first-child > h2:first-child {
+  margin-top: 0;
 }
 
 /* CV embedded PDF */
@@ -618,6 +620,21 @@ a:hover {
   margin-left: 0.4em;
 }
 
+/* Mobile only: toggles start on their own line below the title */
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .mobile-break {
+    display: inline;
+  }
+
+  .mobile-break + .abstract-toggle {
+    margin-left: 0;
+  }
+}
+
 .abstract-text {
   margin-top: 0.5rem;
   padding: 0.8rem 1rem;
@@ -695,6 +712,12 @@ a:hover {
 /* ===== Min height: content fills the space between masthead and footer ===== */
 .quarto-container {
   flex: 1 0 auto;
+}
+
+/* Keep a phrase on one line, without hyphenation */
+.nowrap {
+  white-space: nowrap;
+  hyphens: none;
 }
 
 /* Desktop only: larger base text size (scales all rem values);
