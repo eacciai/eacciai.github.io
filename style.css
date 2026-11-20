@@ -387,6 +387,13 @@ a:hover {
     flex-wrap: wrap;
     row-gap: 0.5em;
     column-gap: 0.5em;
+    padding-bottom: 0;
+  }
+
+  .about-link {
+    font-size: 0.82em;
+    padding: 0.28em 0.55em;
+    border-radius: 4px;
   }
 
   .about-contents {
