@@ -381,8 +381,9 @@ a:hover {
     flex-shrink: 0;
   }
 
+  /* Buttons only on touch devices (see below) */
   .about-links {
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 0.5em;
@@ -739,5 +740,26 @@ a:hover {
   .about-image {
     width: calc(13.5em / 1.125);
     height: calc(13.5em / 1.125);
+  }
+}
+
+/* Narrow window on a touch device: link buttons beside the photo */
+@media (max-width: 991.98px) and (hover: none) and (pointer: coarse) {
+  .about-links {
+    display: flex;
+  }
+}
+
+/* Narrow desktop window: no buttons, affiliation kept under the photo */
+@media (max-width: 991.98px) and (hover: hover) and (pointer: fine) {
+  .about-photo-mobile {
+    flex-direction: column;
+  }
+
+  /* Same size as on the full-width desktop (base text there is 112.5%) */
+  .about-photo-mobile .about-photo-caption {
+    display: block;
+    text-align: left;
+    font-size: calc(0.77rem * 1.125);
   }
 }
