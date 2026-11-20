@@ -224,6 +224,30 @@ a:hover {
   flex-direction: column;
 }
 
+/* Social Links: shown on mobile only */
+.about-links {
+  display: none;
+}
+
+.about-link {
+  color: #6c757d;
+  text-decoration: none;
+  border: 1px solid #6c757d;
+  font-size: 0.82em;
+  padding: 0.28em 0.55em;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.about-link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  text-decoration: none;
+}
+
 /* About Contents (bio, sections) */
 .about-contents {
   padding-right: 1.5em;
@@ -325,7 +349,7 @@ a:hover {
     width: 100%;
   }
 
-  /* Photo at the top */
+  /* Photo on the left, links beside it */
   .about-top {
     display: flex;
     align-items: center;
@@ -355,6 +379,14 @@ a:hover {
   .about-header {
     display: block;
     flex-shrink: 0;
+  }
+
+  .about-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
   }
 
   .about-contents {
